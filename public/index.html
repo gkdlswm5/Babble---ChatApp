@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chatroom Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link href="stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div id="content-wrap">
+          <div class="row">
+              <!-- <img src="babble_logo.svg" alt="Babble Logo"> -->
+              <h1 class="animate__animated animate__fadeInLeft">Babble</h1>
+              <a class="animate__animated animate__fadeInLeft animate__delay-1s style1" id="babble">the chat app</a>
+          </div>
+      </div>
+        <form class="login animate__animated animate__fadeInLeft2" id="form">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email-input" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password-input" placeholder="Password">
+          </div>
+          <!-- <div class="form-control">
+						<label for="room">Room</label>
+						<select name="room" id="room">
+							<option value="JavaScript">JavaScript</option>
+							<option value="Python">Python</option>
+							<option value="PHP">PHP</option>
+							<option value="C#">C#</option>
+							<option value="Ruby">Ruby</option>
+							<option value="Java">Java</option>
+						</select>
+					</div> -->
+          <button type="submit" class="btn btn-default">Login</button>
+          <br />
+          <p>Or sign up <a href="signup.html">here</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+  <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script>
+    
+    animate__fadeInLeft();
+    function animate__fadeInLeft() {
+      document.getElementById("babble").setAttribute("class", "animate__animated animate__fadeInLeft animate__delay-1s")
+    }
+
+</script>
+
+</body>
+<footer class="footer"id="footer">© Copyright, 2020, All Rights Reserved </footer>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chatroom Authentication</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link href="stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div id="content-wrap">
+          <div class="row">
+              <h1 class="animate__animated animate__fadeInLeft">Babble</h1>
+              <a class="animate__animated animate__fadeInLeft animate__delay-1s style1" id="babble">the chat app</a>
+          </div>
+      </div>
+        <form class="signup animate__animated animate__fadeInLeft2">
+          <div class="form-group">
+            <label for="exampleInputEmail1">First Name</label>
+            <input type="text" class="form-control" id="fname-input" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Last Name</label>
+            <input type="text" class="form-control" id="lname-input" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email-input" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password-input" placeholder="Password">
+          </div>
+          <!-- <div class="form-control">
+						<label for="room">Room</label>
+						<select name="room" id="room">
+							<option value="JavaScript">JavaScript</option>
+							<option value="Python">Python</option>
+							<option value="PHP">PHP</option>
+							<option value="C#">C#</option>
+							<option value="Ruby">Ruby</option>
+							<option value="Java">Java</option>
+						</select>
+					</div> -->
+          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
+          <button type="submit" class="btn btn-default">Sign Up</button>
+        </form>
+        <button id="devLogin" class="btn btn-default">Dev Login</button>
+        <br />
+        <p>Or log in <a href="/index.html">here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/signup.js"></script>
+  
+  <!-- DEV LOG IN vvvv -->
+  <script type="text/javascript">
+  $("#devLogin").click(()=> $.post("/api/login", {email: "chad@chad.com", password: 1234}).then(()=> window.location.reload()))
+  </script>
+
+  <script>
+    
+    animate__fadeInLeft();
+    function animate__fadeInLeft() {
+      document.getElementById("babble").setAttribute("class", "animate__animated animate__fadeInLeft animate__delay-1s")
+    }
+
+</script>
+
+</body>
+<footer class="footer" id="footer">© Copyright, 2020, All Rights Reserved </footer>
+</html>

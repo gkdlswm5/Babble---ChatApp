@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="326px" height="83px" viewBox="0 0 326 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>scene_one copy 3</title>
+    <g id="scene_one-copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="Babble" stroke="#6DBDF8" font-family="Futura-Bold, Futura" font-size="60" font-weight="bold" letter-spacing="-0.465517114" fill="#EB9A0B">
+            <tspan x="50.4865513" y="70">Babble</tspan>
+        </text>
+        <polygon id="Path-2" stroke="#6DBDF8" fill="#EB9A0B" points="283 35.2369031 303.923492 23 310 35.2369031 287.106425 42"></polygon>
+        <polygon id="Path-2-Copy" stroke="#6DBDF8" fill="#EB9A0B" transform="translate(25.135106, 20.715737) scale(-1, 1) rotate(-4.000000) translate(-25.135106, -20.715737) " points="7.63510646 23.5147934 34.7581515 11 42.6351065 23.5147934 12.9582496 30.4314749"></polygon>
+        <polygon id="Path-3" stroke="#6DBDF8" fill="#EB9A0B" points="287 52 305 52 302.356862 61 287 56.5"></polygon>
+        <polygon id="Path-3-Copy-2" stroke="#6DBDF8" fill="#EB9A0B" transform="translate(279.135106, 16.500000) scale(1, -1) rotate(39.000000) translate(-279.135106, -16.500000) " points="269.635106 10 288.635106 10 285.845127 23 269.635106 16.5"></polygon>
+        <polygon id="Path-3-Copy" stroke="#6DBDF8" fill="#EB9A0B" transform="translate(25.635106, 50.541742) scale(-1, 1) rotate(8.000000) translate(-25.635106, -50.541742) " points="13.6351065 46 37.6351065 46 34.1109218 55.0834832 13.6351065 50.5417416"></polygon>
+    </g>
+</svg>
